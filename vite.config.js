@@ -1,18 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === "production" ? "/centro-eventos/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/recetas-Julio-Salazar-PFY2202/" : "/",
   test: {
-    environment: 'happy-dom',
+    environment: "happy-dom",
     globals: true,
-    setupFiles: './setupTests.js',
-
+    setupFiles: "./setupTests.js",
     coverage: {
-      provider: 'v8',
-      reporter: ['text', 'html'],
-      reportsDirectory: './coverage'
-    }
-  }
-})
+      provider: "v8",
+      reporter: ["text", "html"],
+      reportsDirectory: "./coverage",
+    },
+  },
+});
