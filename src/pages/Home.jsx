@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { fetchRecipes } from '../api/restApi'
+import { fetchRecipes } from '../services/RecipesApi'
 import { Link } from 'react-router-dom'
 import RecipeCard from "../components/RecipeCard"
 

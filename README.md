@@ -7,8 +7,8 @@ Incluye **pruebas unitarias con Jest + React Testing Library + MSW** y **pruebas
 
 ## 📌 Características principales
 
-- Listado de recetas desde una **API REST mock**.  
-- Detalle de cada receta usando una **API GraphQL mock**.  
+- Listado de recetas consumiendo un endpoint estático / JSON servido desde **GitHub Pages**.
+- Detalle de una receta utilizando una **API GraphQL** mock manejada por MSW en desarrollo/pruebas.
 - Navegación mediante **React Router**.  
 - Componentes reutilizables y diseño responsivo con **TailwindCSS**.  
 - Pruebas unitarias con:
@@ -79,7 +79,7 @@ Se mockean:
 
 ✔ API REST
 
-- GET /api/recipes
+- GET /recipes.json (mock porque GH Pages no permite rutas tipo /api)
 
 ✔ API GraphQL
 

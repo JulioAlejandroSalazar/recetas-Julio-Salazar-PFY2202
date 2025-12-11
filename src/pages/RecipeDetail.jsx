@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { fetchRecipeDetails } from '../api/gqlApi'
+import { fetchRecipeDetails } from '../services/recipeDetailsApi'
 
 export default function RecipeDetail() {
   const { id } = useParams()

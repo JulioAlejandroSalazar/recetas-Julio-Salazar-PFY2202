@@ -1,10 +1,13 @@
 import AppRouter from "./router/AppRouter";
+import { HashRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 
 export default function App() {
   return (
-    <Layout>
-      <AppRouter />
-    </Layout>
+    <HashRouter>
+      <Layout>
+        <AppRouter />
+      </Layout>
+    </HashRouter>
   );
 }
